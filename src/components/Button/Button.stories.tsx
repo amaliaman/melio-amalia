@@ -1,30 +1,49 @@
 import { Button } from './Button';
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 export default {
   title: 'Components/Button',
   component: Button,
   parameters: {
-    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
     layout: 'centered',
   },
-  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
   tags: ['autodocs'],
-  // More on argTypes: https://storybook.js.org/docs/api/argtypes
-  argTypes: {
-    backgroundColor: { control: 'color' },
-    content: { control: 'text' },
+};
+
+export const Main = {
+  args: {
+    label: 'Button',
   },
 };
 
-export const Main = {};
-
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 /**
- * You can configure different background colors.
+ * A primary button with a left icon and an event.
  */
-export const BackgroundColor = {
+export const Primary = {
   args: {
-    backgroundColor: '#b1e2c4',
+    type: 'primary',
+    label: 'Primary button',
+    onClick: () => alert('Button clicked!'),
+    iconLeft: '➡️',
+  },
+};
+
+/**
+ * A tertiary button with a right icon.
+ */
+export const Tertiary = {
+  args: {
+    type: 'tertiary',
+    label: 'Tertiary button',
+    iconRight: '⬇️',
+  },
+};
+
+/**
+ * A critical button.
+ */
+export const Critical = {
+  args: {
+    type: 'critical',
+    label: 'Critical',
   },
 };
