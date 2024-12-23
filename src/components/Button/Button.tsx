@@ -10,15 +10,22 @@ export const Button = ({
   onClick,
   iconLeft,
   iconRight,
+  iconButton,
   // other possible props: enabled/disabled, loading, etc.
 }: ButtonProps) => {
   const classes = classNames('button', type, size);
 
   return (
     <button className={classes} onClick={onClick}>
-      {iconLeft && <span className="icon left">{iconLeft}</span>}
-      {label}
-      {iconRight && <span className="icon right">{iconRight}</span>}
+      {type === 'icon-button' ? (
+        <span className='icon-button'>{iconButton}</span>
+      ) : (
+        <>
+          {iconLeft ? <span className="icon left">{iconLeft}</span> : null}
+          {label}
+          {iconRight ? <span className="icon right">{iconRight}</span> : null}
+        </>
+      )}
     </button>
   );
 };

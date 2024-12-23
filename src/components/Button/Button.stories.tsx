@@ -47,3 +47,14 @@ export const Critical = {
     label: 'Critical',
   },
 };
+
+/**
+ * An icon button.
+ */
+export const IconButton = {
+  args: {
+    type: 'icon-button',
+    iconButton: '🌸',
+    onClick: () => alert('Icon button clicked!'),
+  },
+};

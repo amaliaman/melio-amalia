@@ -45,6 +45,20 @@
     background: var(--hover-critical);
 }
 
+/* icon button */
+
+.button.icon-button {
+    min-width: 40px;
+    padding: 0;
+    background: var(--Action-tertiary);
+    color: var(--Text-primary);
+    border: 1px solid var(--Border-interactive-rest)
+}
+
+.button.icon-button:hover {
+    background: var(--hover-tertiary);
+}
+
 /* button sizes */
 
 .button.medium {
@@ -61,9 +75,11 @@
     max-width: 16px;
     max-height: 16px;
 }
+
 .button>.icon.left {
     margin-inline-end: 8px;
 }
+
 .button>.icon.right {
     margin-inline-start: 8px;
 }
