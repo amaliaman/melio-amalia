@@ -1,0 +1,40 @@
+.card {
+    max-width: 100%;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid var(--Border-static);
+    display: flex;
+    justify-content: space-between;
+}
+
+.card:hover {
+    background: var(--hover-tertiary);
+}
+
+
+.card .top {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+    color: var(--Text-primary);
+    margin-bottom: 4px;
+}
+
+.card .description {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: var(--Text-secondary, #646F87);
+}
+
+.card .description a {
+    font-weight: 600;
+    color: var(--Action-primary);
+    text-decoration: none;
+}
+
+.card .right {
+    margin-left: 16px;
+}

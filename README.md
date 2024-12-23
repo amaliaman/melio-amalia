@@ -1,3 +1,10 @@
+# ⏰ Stuff to do with more time
+1. Use SVG icons instead of emojis
+1. Use breakpoints and make everything responsive
+1. Use SASS or Styled Components (or any other acceptable solution)
+1. Use backdrop/overlay and animation for Modal and Drawer
+1. Add tooltips to CTAs
+
 # Melio's Design-System Home Assignment
 Welcome to your home assignment repository template 😄👍🏼.  
 This repo scaffolds a React + [Storybook](https://storybook.js.org/) + Typescript project for you so you could focus on your assignment rather than everything around it.

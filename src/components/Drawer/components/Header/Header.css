@@ -1,0 +1,25 @@
+.drawer-header {
+  height: 40px;
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--Border-static)
+}
+
+.drawer-header>.drawer-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.drawer-header>.drawer-header-left>.title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  color: var(--Text-primary);
+}
+
+.drawer-header>button {
+  margin-right: 0;
+}

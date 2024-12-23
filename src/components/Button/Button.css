@@ -1,0 +1,85 @@
+/* general button styles */
+.button {
+    min-width: max-content;
+    border-radius: 8px;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+/* primary button */
+
+.button.primary {
+    background: var(--Action-primary);
+    color: var(--Text-inverse);
+    border: none;
+}
+
+.button.primary:hover {
+    background: var(--hover-primary);
+}
+
+/* tertiary button */
+
+.button.tertiary {
+    background: var(--Action-tertiary);
+    color: var(--Text-primary);
+    border: 1px solid var(--Border-interactive-rest)
+}
+
+.button.tertiary:hover {
+    background: var(--hover-tertiary);
+}
+
+/* critical button */
+
+.button.critical {
+    background: var(--Action-critical-primary);
+    color: var(--Text-inverse);
+    border: none;
+}
+
+.button.critical:hover {
+    background: var(--hover-critical);
+}
+
+/* icon button */
+
+.button.icon-button {
+    min-width: 40px;
+    padding: 0;
+    background: var(--Action-tertiary);
+    color: var(--Text-primary);
+    border: 1px solid var(--Border-interactive-rest)
+}
+
+.button.icon-button:hover {
+    background: var(--hover-tertiary);
+}
+
+/* button sizes */
+
+.button.medium {
+    height: 40px;
+}
+
+.button.small {
+    height: 32px;
+}
+
+/* button icons */
+
+.button>.icon {
+    max-width: 16px;
+    max-height: 16px;
+}
+
+.button>.icon.left {
+    margin-inline-end: 8px;
+}
+
+.button>.icon.right {
+    margin-inline-start: 8px;
+}

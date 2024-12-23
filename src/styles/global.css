@@ -1,0 +1,21 @@
+:root {
+     /* note: vars start with capitals because that's how it was in Figma :) */
+
+    --Action-primary: #7849FF;
+    --Action-tertiary: #FFFFFF;
+    --Action-critical-primary: #D80E25;
+
+    --Text-primary: #18191B;
+    --Text-inverse: #FFFFFF;
+
+    --Border-interactive-rest: #8B95A9;
+    --Border-static: #E4E7EC;
+
+    --hover-primary: #5F33E6;
+    --hover-tertiary: #F1F5F8;
+    --hover-critical: #C50C22;
+}
+
+* {
+    font-family: Poppins, sans-serif;
+}

@@ -1,0 +1,4 @@
+.drawer {
+    width: calc(100vw / 2);
+    border: 1px solid var(--Border-static);
+}
