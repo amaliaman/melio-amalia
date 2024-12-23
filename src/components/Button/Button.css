@@ -1,6 +1,6 @@
 /* general button styles */
 .button {
-    min-width: 100px;
+    min-width: max-content;
     border-radius: 8px;
     padding-inline-start: 16px;
     padding-inline-end: 16px;
