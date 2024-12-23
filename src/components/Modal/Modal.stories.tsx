@@ -23,7 +23,7 @@ export const Main = {
 };
 
 /**
- * A modal wihout an icon.
+ * A modal without an icon.
  */
 export const NoIcon = {
   args: {

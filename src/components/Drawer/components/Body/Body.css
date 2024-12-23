@@ -1,0 +1,5 @@
+.drawer-body {
+  padding: 32px;
+  height: calc(100dvh - 88px);
+  overflow-y: auto;
+}
