@@ -30,6 +30,6 @@ export const RightAction = {
   args: {
     title: 'Request delivery details',
     children: "We'll email your vendor to set their delivery method.",
-    rightAction: <Button label="Send request" size="small" />,
+    rightAction: <Button size="small">Send request</Button>,
   },
 };

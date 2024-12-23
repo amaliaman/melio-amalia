@@ -12,12 +12,21 @@ export const Modal = ({
   handleCancel,
   cancelTitle,
   isFooter = true,
-  isClose = true,
+  isCloseButton = true,
+  isOpen = false,
+  onClose,
 }: ModalProps) => {
-  return (
+  return isOpen ? (
     <div className="modal">
-      <Header title={title} icon={icon} isClose={isClose} />
+      <Header
+        title={title}
+        icon={icon}
+        isCloseButton={isCloseButton}
+        onClose={onClose}
+      />
+
       <Body isFooter={isFooter}>{children}</Body>
+
       {isFooter && (
         <Footer
           handleAction={handleAction}
@@ -27,5 +36,5 @@ export const Modal = ({
         />
       )}
     </div>
-  );
+  ) : null;
 };

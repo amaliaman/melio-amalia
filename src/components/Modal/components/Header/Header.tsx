@@ -3,7 +3,12 @@ import './Header.css';
 import { Button } from '../../../Button';
 import { HeaderProps } from './types';
 
-export const Header = ({ title, icon, isClose = true }: HeaderProps) => {
+export const Header = ({
+  title,
+  icon,
+  isCloseButton = true,
+  onClose,
+}: HeaderProps) => {
   return (
     <div className="header">
       <div className="header-left">
@@ -12,12 +17,8 @@ export const Header = ({ title, icon, isClose = true }: HeaderProps) => {
         <span className="title">{title}</span>
       </div>
 
-      {isClose && (
-        <Button
-          type="icon-button"
-          iconButton="✖️"
-          onClick={() => alert('Close modal')} // implement close modal
-        />
+      {isCloseButton && (
+        <Button type="icon-button" iconButton="✖️" onClick={onClose} />
       )}
     </div>
   );

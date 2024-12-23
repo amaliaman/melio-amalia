@@ -4,7 +4,7 @@ import './Button.css';
 import classNames from 'classnames';
 
 export const Button = ({
-  label,
+  children,
   type = 'primary',
   size = 'medium',
   onClick,
@@ -18,11 +18,11 @@ export const Button = ({
   return (
     <button className={classes} onClick={onClick}>
       {type === 'icon-button' ? (
-        <span className='icon-button'>{iconButton}</span>
+        <span className="icon-button">{iconButton}</span>
       ) : (
         <>
           {iconLeft ? <span className="icon left">{iconLeft}</span> : null}
-          {label}
+          {children}
           {iconRight ? <span className="icon right">{iconRight}</span> : null}
         </>
       )}

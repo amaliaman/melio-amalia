@@ -1,4 +1,7 @@
+import React from 'react';
 import { Modal } from './Modal';
+import { Button } from '../Button';
+import { useDisclosure } from '@reactuses/core';
 
 export default {
   title: 'Components/Modal',
@@ -9,8 +12,10 @@ export default {
   tags: ['autodocs'],
 };
 
-export const Main = {
-  args: {
+export const Main = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const args = {
     title: 'Modal header',
     icon: '🔴',
     children:
@@ -18,8 +23,22 @@ export const Main = {
     actionTitle: 'Delete',
     handleAction: () => alert('Delete clicked!'),
     cancelTitle: 'Cancel',
-    handleCancel: () => alert('Cancel clicked!'),
-  },
+    handleCancel: onClose,
+    isOpen,
+    onClose,
+  };
+
+  return (
+    <>
+      {!isOpen && (
+        <Button type="tertiary" size="small" onClick={onOpen}>
+          Open modal
+        </Button>
+      )}
+
+      <Modal {...args} />
+    </>
+  );
 };
 
 /**
@@ -27,6 +46,7 @@ export const Main = {
  */
 export const NoIcon = {
   args: {
+    isOpen: true,
     title: 'No icon here',
     children:
       'Lorem ipsum dolor sit amet, consectetur adipiscing Nullam a arcu est. Nulla facilisi. Donec nec sem aliquet, laoreet nisi et, bibendum tellus. Aenean sed nibh lorem.',
@@ -42,7 +62,8 @@ export const NoIcon = {
  */
 export const NoCloseButton = {
   args: {
-    isClose: false,
+    isOpen: true,
+    isCloseButton: false,
     title: 'No close button here',
     icon: '🔵',
     children:
@@ -59,6 +80,7 @@ export const NoCloseButton = {
  */
 export const NoFooter = {
   args: {
+    isOpen: true,
     isFooter: false,
     icon: '🟢',
     title: 'No footer here',

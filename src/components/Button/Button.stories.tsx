@@ -11,7 +11,7 @@ export default {
 
 export const Main = {
   args: {
-    label: 'Button',
+    children: 'Button',
   },
 };
 
@@ -21,7 +21,7 @@ export const Main = {
 export const Primary = {
   args: {
     type: 'primary',
-    label: 'Primary button',
+    children: 'Primary button',
     onClick: () => alert('Button clicked!'),
     iconLeft: '➡️',
   },
@@ -33,7 +33,7 @@ export const Primary = {
 export const Tertiary = {
   args: {
     type: 'tertiary',
-    label: 'Tertiary button',
+    children: 'Tertiary button',
     iconRight: '⬇️',
   },
 };
@@ -44,7 +44,7 @@ export const Tertiary = {
 export const Critical = {
   args: {
     type: 'critical',
-    label: 'Critical',
+    children: 'Critical',
   },
 };
 

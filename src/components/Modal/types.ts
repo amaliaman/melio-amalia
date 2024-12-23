@@ -9,5 +9,7 @@ export interface ModalProps {
   handleAction?: () => void;
   handleCancel?: () => void;
   isFooter?: boolean;
-  isClose?: boolean;
+  isCloseButton?: boolean;
+  isOpen?: boolean;
+  onClose?: () => void;
 }

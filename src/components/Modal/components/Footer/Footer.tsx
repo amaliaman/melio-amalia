@@ -12,10 +12,15 @@ export const Footer = ({
   return (
     <div className="footer">
       {cancelTitle && (
-        <Button label={cancelTitle} type="tertiary" onClick={handleCancel} />
+        <Button type="tertiary" onClick={handleCancel}>
+          {cancelTitle}
+        </Button>
       )}
+
       {actionTitle && (
-        <Button label={actionTitle} type="critical" onClick={handleAction} />
+        <Button type="critical" onClick={handleAction}>
+          {actionTitle}
+        </Button>
       )}
     </div>
   );
